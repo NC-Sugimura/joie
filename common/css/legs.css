@@ -1,0 +1,111 @@
+.article-body{
+	text-align: center;
+}
+/*目次
+******************************/
+.index {
+	position: relative;
+	margin: 2em 0;
+	padding: 0.5em 1em;
+	border: solid 3px #412416;
+}
+.index p {
+	position: absolute;
+	display: inline-block;
+	top: -27px;
+	left: -3px;
+	padding: 0 9px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 17px;
+	background: #412416;
+	color: #ffffff;
+	font-weight: bold;
+	border-radius: 5px 5px 0 0;
+}
+.index ol {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 1.5em;
+}
+.index a{
+	min-width: calc(100% / 3);
+}
+.index li {
+	text-align: left;
+}
+@media only screen and (max-width: 750px) {}
+
+/*こんなお悩みありませんか？
+******************************/
+
+#sec1 .check{	
+	list-style: none;
+	width: 20em;
+	margin: auto;
+}
+#sec1 .check li:before {
+	margin-right: .5em;
+	font-family: FontAwesome;
+	content: "\f00c";
+	color: #FFC107;
+}
+
+/*こんな効果
+******************************/
+#sec4 ul {
+	display: flex;
+	flex-wrap: wrap;
+	width: 70%;
+	margin: 1em auto;
+	list-style: none;
+}
+#sec4 li {
+	min-width:calc(100% / 3 - 1em);
+	text-align: left;
+}
+#sec4 li:before {
+	margin-right: .5em;
+	font-family: FontAwesome;
+	content: "\f299";
+	color: #412416;
+}
+
+/*施術の流れ
+******************************/
+#sec5 dl{
+	padding: 2em;
+	border: solid 1px #a4ba49; 
+}
+#sec5 dt{
+	color: #a4ba49;
+}
+#sec5 dd:not(:last-of-type)::after{
+	display: block;
+	font-family: FontAwesome;
+	content: "\f0d7";
+	color: #9b8d77;
+	font-size: 450%;
+	line-height: 1;
+}
+
+/*お客様の声
+******************************/
+#sec6 p {
+	box-sizing: border-box;
+	padding: 3em;
+	margin: 2em 0;
+	background: #fff0c6;
+	outline: 2px dashed #fff;
+	outline-offset: -1em;
+}
+
+/*施術料金
+******************************/
+#sec7 p {
+	padding: 0.5em 1em;
+	margin: 2em 0;
+	background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px, #E4F4DC 3px, #E4F4DC 7px);
+	background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px, #E4F4DC 3px, #E4F4DC 7px);
+}
