@@ -1,0 +1,142 @@
+body {
+	background-color: #fbffef;
+	color: #452919;
+}
+body *, body *:before, body *:after {
+}
+a {
+	color: #8aa710;
+	text-decoration: none;
+}
+a:hover {
+	color: #b4d330
+}
+img {
+	width: 100%;
+	height: auto;
+}
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+.kome {
+	font-size: 80%;
+}
+.kome:before{
+	content:"※";
+}
+nav,
+.sect_title,
+h2{
+	font-style: italic;	
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+}
+nav a p:first-of-type,
+.sect_title{
+	font-weight: bold;
+}
+header {
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+}
+#intro {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background: url(https://joie-group.com/top/img/main.jpg) no-repeat;
+}
+.sect_title {
+	color: rgba(179, 194, 200, 0.25);
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+}
+
+/*アイコン付きリスト*/
+.icon li,
+.icon dt{
+	display: flex;
+	align-items: flex-start;
+}
+.icon li:before,
+.icon dl:before{
+	margin-right:0.5em;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: #71ba51;
+}
+.icon li{
+	margin-bottom: 1em;
+}
+/*施術メニュー*/
+#menu li:before,
+#menu dl:before  {
+	content: '\f06c';
+}
+#menu dd:after{
+	content: "円";
+}
+#menu .kome{
+	text-align: right;
+}
+/*店舗情報*/
+#shop .place:before {
+	content: '\f3c5';
+}
+#shop .tel:before {
+	content: '\f095';
+}
+#shop .dog:before {
+	content: '\f1b0';
+}
+#shop .child:before {
+	content: '\f1ae';
+}
+#shop .time:before {
+	content: '\f017';
+}
+#shop .holiday:before {
+	content: '\f236';
+}
+/*店舗情報*/
+li.place{
+	flex-wrap: wrap;
+}
+li.place span{
+	display: block;
+	width: 100%;
+	margin-left: 1rem;
+}
+/*CTA*/
+.contact_box {
+	text-align: center;
+}
+/*電話ボタン*/
+.btn-detail{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 3em;
+	margin: 1rem auto;
+	background-color: #57ac6a;
+	border-radius: 0.5rem;
+	box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 120%;
+}
+/*footer*/
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+}
+footer figure img {
+	width: 100%;
+	height: auto;
+}

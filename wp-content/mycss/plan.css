@@ -1,0 +1,171 @@
+@media screen and (min-width: 768px) {}
+
+
+/*導入部
+******************************/
+#intro {
+    text-align: center;
+}
+
+#intro p {
+    margin: 0;
+}
+
+#intro .flex {
+    justify-content: space-around;
+}
+
+#intro .flex a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    border-radius: 50%;
+    background-color: rgba(213, 230, 237, .5);
+}
+
+#intro .flex a:after {
+    display: block;
+    padding-top: 100%;
+    content: "";
+}
+
+#intro .flex a {
+    text-decoration: none;
+    color: #000c15;
+}
+
+#intro .flex a:hover {
+    background-color: rgba(154, 237, 210, .5);
+}
+
+#intro .flex a p {
+    font-size: 2em;
+    font-family: "游明朝";
+}
+
+#intro .flex a p:first-letter {
+    font-size: 2em;
+}
+
+#intro > p {
+    width: 100%;
+    margin: 2em auto;
+    font-weight: bold;
+    text-align: center;
+    font-size: 130%;
+}
+
+/*共通項目
+******************************/
+
+/*こんなお悩みありませんか*/
+.onayami ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.onayami ul li {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 30%;
+    min-width: 15em;
+    margin: 1em 0;
+    border-radius: 50%;
+    background-color: #fff;
+    border: dotted 2px rgba(213, 230, 237, .8);
+    padding: 2em 0;
+    text-align: center;
+    list-style: none;
+}
+
+.onayami ul li:before {
+    margin-right: 0.5em;
+    color: #412416;
+    font-family: FontAwesome;
+    content: '\f14a';
+}
+
+/*当店の施術*/
+.operation .flex {
+    justify-content: space-around;
+}
+
+.operation .flex figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    border-radius: 50%;
+	overflow: hidden;
+}
+
+.operation .flex figure:after {
+    display: block;
+    padding-top: 100%;
+    content: "";
+}
+
+.operation .flex figure img {
+    width: 100%;
+    max-width: unset;
+    height: auto;
+}
+
+/*こんな効果*/
+.effect ul {
+    margin: 1em auto;
+}
+
+.effect ul li {
+    display: inline;
+    list-style: none;
+    padding-left: 0.5em;
+    background: linear-gradient(transparent 50%, #e6f4fa 50%);
+}
+
+/*料金*/
+.price dl {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: -webkit-repeating-linear-gradient(-45deg, #fde6af, #fde6af 3px, #fff4d9 3px, #fff4d9 7px);
+    background: repeating-linear-gradient(-45deg, #f1daa3, #fde6af 3px, #fff4d9 3px, #fff4d9 7px);
+    text-shadow: 2px 2px #fff;
+}
+@media screen and (min-width: 768px) {
+.price dl {
+    display: flex;
+	}
+}
+@media screen and (max-width: 767px) {
+	.price dd {
+		text-align: right;
+	}
+}
+
+.price dt {
+    font-weight: normal;
+}
+
+/*美姿勢
+******************************/
+/*お悩み*/
+#style .onayami ul li {
+    margin: 1em;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .flex {
+        display: block;
+    }
+
+    #intro .flex a,
+    .operation .flex figure {
+        width: 55%;
+        margin: 5% auto;
+
+    }
+}

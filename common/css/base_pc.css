@@ -1,0 +1,125 @@
+/*ヘッダー*/
+header {
+	height: 70px;
+}
+/*ヘッダーロゴ*/
+header > a {
+	width: 20%;
+	padding: 0.2rem;
+}
+header > a figure {
+	height: 100%;
+}
+header > a figure img {
+	width: auto;
+	height: calc(70px - 0.4rem);
+}
+/*Gナビ*/
+header nav {
+	display: flex;
+	justify-content: space-between;
+}
+header nav a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 10em;
+	font-size: 120%;
+}
+/*表紙*/
+#intro {
+	height: 100vh;
+	padding-top: 70px;
+	background-size: cover;
+	background-position: center top 70px;
+}
+/*メインロゴ*/
+.main_logo {
+	position: relative;
+	display: block;
+	width: 1200px;
+	margin: 0 auto;
+	text-align: right;
+	z-index: 10;
+}
+.main_logo img {
+	margin-bottom: 32px;
+	width: 370px;
+}
+/*セクション*/
+section {
+	width: 100%;
+	padding: 140px calc(50% - 600px) 70px;
+}
+section .flex{
+	justify-content: space-between;
+	width: 100%;
+}
+.flex > div{
+	width: calc(100% - 500px - 2rem);
+}
+/*セクションイメージ*/
+figure.img{
+	width: 400px;
+}
+/*セクション背景文字*/
+.sect_title {
+	font-weight: 400;
+	font-size: 160px;
+	line-height: 0.5;
+}
+/*セクションタイトル*/
+h2 {
+	font-size: 40px;
+	color:#3B6553;
+	margin-bottom: 2rem;
+}
+/*セクション文字列*/
+.sect_text{
+	line-height: 1.2;
+}
+/*互い違い*/
+section:nth-of-type(even){
+	background-color: rgba(103,138,98,0.2);
+}
+section:nth-of-type(even) .flex{
+	flex-direction: row-reverse;
+}
+/*電話ボタン*/
+.btn-detail{
+	width: 48%;
+}
+/*施術メニュー*/
+#menu dl{
+	display: flex;
+	margin-bottom: 1em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px dotted #305243;
+}
+#menu dt {
+	width: calc(100% - 9em - 2em);	
+}
+#menu dd {
+	width: 9em;
+	text-align: right;
+}
+/*姉妹店*/
+#family .flex > div{
+	width:48%;
+}
+#family a{
+	display: block;
+	width: 300px;
+}
+/*フッター*/
+footer{
+	align-items: center;
+}
+footer figure {
+	width: 150px;
+}
+footer address{
+	width: calc(100% - 150px);
+	padding-left: 1em;
+}

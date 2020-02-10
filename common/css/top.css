@@ -1,0 +1,271 @@
+@charset "UTF-8";
+@media only screen and (max-width: 750px) {
+	/*基本レイアウトの調整*/
+	body {
+		margin: 0;
+	}
+	 
+	.wrap {
+		padding: 60px 0 0 0;
+	}
+	 
+	.content {
+		text-align: center;
+		font-size: 22px;
+		color: #bf86ce;
+		height: 2000px;
+		padding: 60px;
+		background-color: #f8e0f7;
+	}
+	 
+	/*ハンバーガーボタン*/
+	 
+	.header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 60px;
+		background-color: #be9dc9;
+	}
+		
+	.el_humburger {
+		position: absolute;
+		top: 18px;
+		right: 18px;
+		width: 26px;
+		height: auto;
+		padding-top: 1px;
+		box-sizing: border-box;
+		z-index: 10000;
+		transition: all 0.2s ease-in-out;
+		cursor: pointer;
+		pointer-events: auto;
+	}
+	 
+	.js_humburgerOpen .el_humburger {
+	}
+	 
+	.el_humburger > span {
+		display: block;
+		width: 100%;
+		margin: 0 auto 6px;
+		height: 3px;
+		background: #000;
+		transition: all 0.2s ease-in-out;
+		/*&:last-child {
+			margin-bottom: 0;
+		}
+		.js_humburgerOpen & {
+			background: #000;
+		}*/
+	}
+	 
+	.js_humburgerOpen .el_humburger > span.top {
+		transform: translateY(9px) rotate(-45deg);
+	}
+	 
+	.js_humburgerOpen .el_humburger > span.middle {
+		opacity: 0;
+	}
+	 
+	.js_humburgerOpen .el_humburger > span.bottom {
+		transform: translateY(-9px) rotate(45deg);
+	}
+	 
+	.el_humburgerButton.el_humburgerButton__close {
+		top: 2%;
+		right: 2%;
+	}
+	 
+	.el_humburgerButton__close > span {
+		display: block;
+		width: 35px;
+		margin: 0 auto;
+		height: 4px;
+		background: #fff;
+	}
+	 
+	.el_humburgerButton__close > span.el_humburgerLineTop {
+		transform: translateY(5px) rotate(-45deg);
+	}
+	 
+	.el_humburgerButton__close > span.el_humburgerLineBottom {
+		transform: translateY(-6px) rotate(45deg);
+	}
+	 
+	/*ナビゲーション*/
+	 
+	.navigation {
+		display: none;
+		/*&.js_appear {
+			position: fixed;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			display: block;
+			z-index: 9999;
+		}*/
+	}
+	 
+	.navigation_screen {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba(255, 255, 255, 0.96);
+		z-index: 0;
+		margin-top: 0px;
+		padding-top: 0px;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	 
+	.navigation_wrapper {
+		padding: 80px 0 0 0;
+		text-align: center;
+	}
+	 
+	.navigation_item {
+		font-ize: 18px;
+		margin-bottom: 20px;
+	}
+	 
+	.navigation_item > a {
+		color: #000;
+		text-decoration: none;
+	}
+	 
+	.js_fixed {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+	}
+}
+@media only screen and (min-width: 751px) {
+	body {
+		background-color: #fbffef;
+		color: #452919;
+	}
+	body *, body *:before, body *:after {
+		font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+		transform: rotate(.03deg);
+		font-weight: bold;
+	}
+	a {
+		color: #8aa710;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #b4d330
+	}
+	header {
+		position: fixed;
+		top: 0;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		height: 70px;
+		background-color: #fff;
+		box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.2);
+		z-index: 1000;
+	}
+	header > a {
+		padding: 10px;
+	}
+	header > a figure{
+		height: 100%;
+	}
+	header nav {
+		display: flex;
+		justify-content: space-between;
+	}
+	header nav a {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 10em;
+		font-size: 120%;
+	}
+	#intro {
+		position: relative;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 100vh;
+		padding-top: 70px;
+		background: url(img/main.jpg) no-repeat;
+		background-size: cover;
+		background-position: center top 70px;
+	}
+	.main_logo {
+		position: relative;
+		display: block;
+		width: 1200px;
+		margin: 0 auto;
+		text-align: right;
+		z-index: 10;
+	}
+	.main_logo img {
+		margin-bottom: 32px;
+		width: 370px;
+	}
+	.sect_title span {
+		color: rgba(179, 194, 200, 0.25);
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 12rem;
+		line-height: 120px;
+	}
+	.sect_title h2 {
+		font-family: 'Noto Serif JP', serif;
+		font-weight: 500;
+		font-size: 2.8rem;
+		line-height: 28px;
+		letter-spacing: 0.13em;
+		margin-top: -20px;
+	}
+	footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 80px;
+		padding: 0 10px;
+		background-color: #dff290;
+		color: #fff;
+	}
+	footer img {
+		height: 60px;
+		width: auto;
+	}
+	body > div:not(#intro) {
+		width: 100%;
+		height: 50vh;
+		border: 1px solid #000;
+	}
+	section{
+		display: flex;
+		align-items: center;
+		width: 1200px;
+		min-height: 100vh;
+		padding: 90px 200px 20px;
+		margin: auto;
+		background-repeat: no-repeat;
+	}
+	section:nth-of-type(even){
+		flex-direction: row-reverse;
+	}
+	.sect_title{
+		width: 40%;
+	}
+	.sect_text{
+		width:60%;
+	}
+	#consept{
+		background-image: url()
+	}
+}

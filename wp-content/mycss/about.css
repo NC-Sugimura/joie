@@ -1,0 +1,87 @@
+.article-body h2 {
+    margin-bottom: 2em;
+}
+
+/* オーナー挨拶 */
+#owner-message img,
+#dog-message img,
+#facility img {
+    display: block;
+}
+
+#owner-message .flex img,
+#dog-message .flex img,
+#facility .flex img {
+    width: 30%;
+    height: auto;
+}
+
+#owner-message .flex .o-m-txt,
+#dog-message .flex .d-m-txt {
+    width: 65%;
+    margin-top: 1em;
+}
+
+#owner-message .flex,
+#dog-message .flex,
+#facility .flex {
+    justify-content: flex-end;
+}
+
+.o-m-txt p {
+    font-size: 1.1em;
+    font-family: serif;
+}
+
+.o-m-txt .o-name {
+    font-size: 1em;
+    font-family: inherit;
+    margin-top: 4em;
+}
+
+
+
+/*　ワンチャン　*/
+#dog-message .d-m-txt .d-name {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.d-m-txt p {
+    font-family: 1.1em;
+    text-shadow: 2px 2px #fff;
+}
+
+/*　店内紹介　*/
+
+/* レスポンシブ */
+@media screen and (max-width: 1000px) {
+
+    #owner-message .flex .o-m-txt,
+    #dog-message .flex .d-m-txt,
+    #dog-message .flex img,
+    #facility .flex img,
+    #owner-message .flex img,
+    #dog-message .flex img,
+    #facility .flex img {
+        width: 80%;
+        height: auto;
+        margin: 5% auto;
+    }
+
+    #owner-message .flex img {
+        width: 55%;
+        height: auto;
+        margin: 5% auto;
+    }
+
+    .o-m-txt .o-name {
+        margin-top: 5%;
+    }
+
+    .flex {
+        display: block;
+    }
+}

@@ -1,0 +1,46 @@
+.product-content h2 {
+	text-shadow: 2px 2px 0.5px #fff;
+}
+.product-content p {
+	text-shadow: 2px 2px 0.5px #000;
+}
+/*スライダー*/
+@media screen and (max-width: 767px) {
+	.slider-message, .slider-message .bx-wrapper, .slider-message .bx-viewport, #bxslider-text {
+		height: 100% !important;
+	}
+	.slider-message li {
+		bottom: 2em;
+		right: 1em;
+		text-align: right;
+	}
+	.bx-wrapper .bx-viewport{
+		height: 360px!important;
+	}
+	.slider #bxslider li{
+		height: 360px;
+	}
+}
+
+/* フロントページセールスセクション */
+.front-s-txt {
+    font-size: 1.1em;
+    font-family: serif;
+    font-weight: bold;
+    color: #69605c;
+    font-style: italic;
+}
+
+/* フロントページCTAセクション */
+.front-cta-content dl {
+    border: 1px solid;
+}
+
+/*　フロントページボーダー外し　*/
+.eb-sales-section,
+.eb-benefit-section,
+.eb-case-section,
+.eb-info-section,
+.eb-accordion-faq-section {
+    border: 0;
+}
