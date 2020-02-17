@@ -1,12 +1,17 @@
 @media screen and (min-width: 768px) {}
 
-@media screen and (max-width: 767px) {}
-
 @media screen and (min-width: 768px) {
-    .article-body section {
-        margin-bottom: 10rem;
+	br.sp{display: none;}
+    .article-body section:not(:first-of-type) {
+        margin-top: 10rem;
     }
 }
+@media screen and (max-width: 767px) {
+    .article-body section:not(:first-of-type) {
+        margin-top: 15vw;
+    }
+}
+
 
 .article {
     border: 0;
@@ -52,7 +57,6 @@
     font-size: 130%;
     font-family: "游明朝";
 }
-
 .h2_support {
     margin: 2em 0;
     position: relative;
@@ -86,11 +90,9 @@
     display: flex;
     flex-wrap: wrap;
 }
-
 .rice {
     font-size: 90%;
 }
-
 .rice:before {
     content: "※";
 }
@@ -98,7 +100,6 @@
 .txt-a-right {
     text-align: right;
 }
-
 /*top*/
 .benefit-box-list:hover h3,
 .benefit-box-list:hover p {

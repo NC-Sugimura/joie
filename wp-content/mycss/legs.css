@@ -1,5 +1,7 @@
-.article-body{
-	text-align: center;
+@media only screen and (min-width: 751px) {
+	.article-body {
+		text-align: center;
+	}
 }
 /*目次
 ******************************/
@@ -29,7 +31,7 @@
 	margin: 0;
 	padding: 1.5em;
 }
-.index a{
+.index a {
 	min-width: calc(100% / 3);
 }
 .index li {
@@ -39,31 +41,67 @@
 
 /*こんなお悩みありませんか？
 ******************************/
-
-#sec1 .check{	
+#sec1 .check {
 	list-style: none;
 	width: 20em;
-	margin: auto;
+	margin: 0;
+	text-align: left;
 }
 #sec1 .check li:before {
 	margin-right: .5em;
 	font-family: FontAwesome;
 	content: "\f00c";
-	color: #FFC107;
+	color: #a4ba49;
 }
+#sec1 > .flex {
+	margin-bottom: 2em;
+}
+@media only screen and (min-width: 751px) {
+	#sec1 > .flex {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 70%;
+		margin: auto;
+	}
+	#sec1 > .flex .check, #sec1 > .flex figure {
+		width: 50%;
+	}
+	#sec1 .check li {
+		line-height: 2.2;
+	}
+}
+
+/*joieの特徴
+******************************/
+#sec3 figure{
+	margin: 1em auto;
+}
+
 
 /*こんな効果
 ******************************/
 #sec4 ul {
 	display: flex;
 	flex-wrap: wrap;
-	width: 70%;
 	margin: 1em auto;
 	list-style: none;
 }
+@media only screen and (min-width: 751px) {
+	#sec4 ul {
+		width: 70%;
+	}
+}
 #sec4 li {
-	min-width:calc(100% / 3 - 1em);
+	min-width: calc(100% / 3 - 1em);
 	text-align: left;
+	margin: 1em 0;
+}
+@media only screen and (max-width: 750px) {
+	#sec4 li {
+		min-width: 50%;
+		margin: 0.5em 0;
+	}
 }
 #sec4 li:before {
 	margin-right: .5em;
@@ -74,14 +112,15 @@
 
 /*施術の流れ
 ******************************/
-#sec5 dl{
+#sec5 dl {
 	padding: 2em;
-	border: solid 1px #a4ba49; 
+	border: solid 1px #a4ba49;
+	text-align: center;
 }
-#sec5 dt{
+#sec5 dt {
 	color: #a4ba49;
 }
-#sec5 dd:not(:last-of-type)::after{
+#sec5 dt:not(:first-of-type)::before {
 	display: block;
 	font-family: FontAwesome;
 	content: "\f0d7";
@@ -89,7 +128,6 @@
 	font-size: 450%;
 	line-height: 1;
 }
-
 /*お客様の声
 ******************************/
 #sec6 p {
@@ -100,7 +138,6 @@
 	outline: 2px dashed #fff;
 	outline-offset: -1em;
 }
-
 /*施術料金
 ******************************/
 #sec7 p {
